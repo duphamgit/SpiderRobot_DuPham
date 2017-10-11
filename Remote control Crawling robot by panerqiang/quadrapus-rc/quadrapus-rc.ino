@@ -31,7 +31,7 @@
 /* #include <RF24.h>    //nRF24L01 module need 3/3 */
 /* Installation and Adjustment -----------------------------------------------*/
 //#define INSTALL //uncomment only this to install the robot  
-//#define ADJUST  //uncomment only this to adjust the servos 
+#define ADJUST  //uncomment only this to adjust the servos 
 //#define VERIFY  //uncomment only this to verify the adjustment
 const float adjust_site[3] = { 100, 80, 42 };
 /*const float real_site[4][3] = { { 100, 80, 42 }, { 100, 80, 42 },
@@ -42,7 +42,7 @@ const float real_site[4][3] = { { 98, 80, 28 }, { 83, 89, 24 },
 //define 12 servos for 4 legs
 Servo servo[4][3];
 //define servos' ports
-const int servo_pin[4][3] = { 2, 3, 4, 5, 6, 7, 14, 15, 16, 17, 18, 19 };
+const int servo_pin[4][3] = { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 };
 /* Wireless communication ----------------------------------------------------*/
 //dfine RF24 for nRF24l01
 //RF24 radio(9, 10);  
